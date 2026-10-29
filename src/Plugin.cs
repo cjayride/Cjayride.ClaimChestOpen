@@ -9,7 +9,7 @@ namespace Cjayride.ClaimChestOpen
     {
         public const string PluginGuid = "cjayride.ClaimChestOpen";
         public const string PluginName = "Claim Chest Open";
-        public const string PluginVersion = "1.0.0";
+        public const string PluginVersion = "1.0.1";
 
         private void Awake()
         {

@@ -1,32 +1,51 @@
-# Claim Chest Open
+# 📦 Claim Chest Open
 
-OpenSesame for chests. When you press E on a container, your client takes ZDO ownership first, then the chest opens locally. The dedicated server records it; other players see it when their packet arrives. You no longer wait on whoever happened to load that zone first.
+### Open Containers Without Waiting for ZDO Ownership
 
-Ship and cart inventories are not claimed.
+**OpenSesame for Valheim containers.**
 
-**Client only.** Dedicated servers do not need this.
+Claim Chest Open lets your client take ownership of a container's ZDO (Zone Data Object) before opening it. When you press **E** to open a container, ownership is claimed first so the container can open locally without waiting for whichever player originally loaded the area.
 
-## Requires
+The dedicated server records the change, and other players see the updated state when their network packets arrive.
+
+### ✨ Features
+
+- **Faster container access:** Claim ownership before opening a container.
+- **Reduced waiting:** No longer need to wait on the player who first loaded the zone.
+- **Multiplayer compatible:** The dedicated server records the change for other players to receive.
+- **Ship and cart inventories excluded:** These inventories are not claimed by the mod.
+
+## 📦 Requirements
 
 - [BepInExPack for Valheim](https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/)
 
-## Install
+> **Client-side only:** Dedicated servers do not need this mod installed.
 
-**Thunderstore, Gale, or r2modman:** install the package.
+## 📥 Installation
 
-**Nexus or a manual zip:** copy `plugins/cjayride-ClaimChestOpen` into `Valheim/BepInEx/plugins`. You should end up with:
+### Thunderstore, Gale, or r2modman
 
+Install the package through your preferred mod manager.
+
+### Nexus Mods or Manual Installation
+
+1. Download and extract the mod archive.
+2. Copy the `plugins/cjayride-ClaimChestOpen` folder into your Valheim `BepInEx/plugins` directory.
+3. Confirm the DLL is located at:
+
+```text id="7ab3d9"
+Valheim/BepInEx/plugins/
+└── cjayride-ClaimChestOpen/
+    └── Cjayride.ClaimChestOpen.dll
 ```
-Valheim/BepInEx/plugins/cjayride-ClaimChestOpen/Cjayride.ClaimChestOpen.dll
-```
 
-Do not copy `manifest.json`, `README.md`, or `icon.png` into the game.
+**Do not copy** `manifest.json`, `README.md`, or `icon.png` into the game's plugin directory.
 
-Replace `icon.png` (exactly 256×256) before uploading to Thunderstore, Hexium, or Nexus if you are packaging this yourself.
+If you are packaging this mod yourself for Thunderstore, Hexium, or Nexus, replace `icon.png` with your own **256 × 256** icon before uploading.
 
-## Contact
--  X: x.com/cjayride
+## 💬 Contact
 
--  Discord: discord.gg/cjayride (find me at the top of the user list) "cjayride"
+- **X:** [@cjayride](https://x.com/cjayride)
+- **Discord:** [discord.gg/cjayride](https://discord.gg/cjayride) — Find `cjayride` near the top of the user list.
+- **Twitch:** [twitch.tv/cjayride](https://twitch.tv/cjayride)
 
--  Twitch: twitch.tv/cjayride

@@ -1,9 +1,9 @@
 {
   "name": "ClaimChestOpen",
-  "version_number": "1.0.0",
+  "version_number": "1.0.1",
   "website_url": "https://discord.gg/cjayride",
   "description": "Take chest ownership on your client before it opens, so a distant player in the same zone is not in the round trip. Client only.",
   "dependencies": [
-    "denikson-BepInExPack_Valheim-5.4.2351"
+    "denikson-BepInExPack_Valheim-5.4.2360"
   ]
 }
